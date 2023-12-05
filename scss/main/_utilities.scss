@@ -1,0 +1,572 @@
+
+.notshow {
+    display: none;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.small-icon {
+    width: 30px;
+}
+
+@media (width <= 650px) {
+    header {
+        background-color: $color2;
+        height: 3.625rem;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+
+        #menu {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+
+            img {
+                width: 30px;
+                background-color: #5ED6DF;
+                padding: 5px;
+                border-radius: 100%;
+            }
+        }
+
+        #menu:hover {
+            cursor: pointer;
+            animation: 0.8s ease-in-out 0s scaleup;
+            transform: scale(1.1);
+            
+            img {
+                background-color: rgb(81, 189, 197);
+                box-shadow: 0 0 5px -2px black;
+            }
+        }
+
+        #menu:not(:hover) {
+            animation: 0.8s ease-in-out 0s scaledown;
+        }
+
+        .hidden-list {
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 2;
+            background-color: #5ED6DF;
+            padding: 80px 80px 50px 40px;
+            border-radius: 0 0 0 20px;
+            animation: 0.5s ease-out 0s fromtop;
+
+            ul {
+
+                li {
+                    margin-bottom: 30px;
+                    font-weight: 700;
+                    font-size: 1.3rem;
+
+                    a:hover {
+                        color: $color5;
+                    }
+                }
+
+                li:hover {
+                    position: relative;
+                    animation: 0.3s ease-in-out 0s toright;
+                    left: 10px;
+                }
+            }
+
+            #closemenu {
+                display: flex;
+                position: absolute;
+                top: 10px;
+                right: 20px;
+                background-color: $color4;
+                padding: 10px;
+                border-radius: 100%;
+                border: none;
+            }
+
+            #closemenu:hover {
+                cursor: pointer;
+                background-color: lighten($color4, 5);
+                box-shadow: 0 0 5px -2px black;
+                animation: 0.5s ease-in-out 0s turn360;
+            }
+        }
+    }
+
+    main {
+
+        #aboutme {
+            .content1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: $color2;
+                padding-bottom: 2rem;
+
+                .c1-image {
+                    margin: 2rem 0;
+                    display: flex;
+                    justify-content: center;
+
+                    .studying {
+                        min-width: 250px;
+                        width: calc(100% - 200px);
+                        border-radius: 8px;
+                        opacity: 95%;
+                    }
+                }
+
+                .c1-text {
+                    text-align: center;
+                    width: calc(100% - 100px);
+                    font-weight: 500;
+
+                    h1 {
+                        margin-bottom: 1rem;
+                        font-size: 2rem;
+                    }
+
+                    p {
+                        line-height: 1.5;
+                        margin-top: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        #projects {
+            .content2 {
+
+                .c2-title {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 1.2rem;
+                    padding-top: 2rem;
+                    background: linear-gradient(to bottom, $color2 0%, $color3opacity70 40%, $color3 100%);
+                }
+
+                .works {
+
+                    .project1 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        background-color: $color3;
+                        padding-top: 3rem;
+
+                        .construction {
+                            background-color: gray;
+                            min-width: 250px;
+                            width: calc(100% - 200px);
+                            height: 200px;
+                            border-radius: 1rem;
+                            overflow: hidden;
+                            // ! Delete this part when adding a preview for the project and change the class name
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            span {
+                                font-size: 0.9rem;
+                            }
+                            //  !
+                        }
+
+                        .p1-description {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            margin: 2rem 0;
+                            gap: 2rem;
+
+                            .p1-text {
+                                text-align: center;
+                                min-width: 250px;
+                                width: calc(100% - 100px);
+
+                                h3 {
+                                    font-size: 1.3rem;
+                                    margin-bottom: 1rem;
+                                }
+
+                                p {
+                                    font-size: 0.9rem;
+                                }
+                            }
+
+                            .p1-img {
+                                display: flex;
+                                height: 50px;
+                                gap: 5px;
+                            }
+                        }
+                    }
+
+                    .project2 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        background: linear-gradient(to bottom, $color3 0%, $color3opacity70 3%, $color2 8% 100%);
+                        padding-top: 3rem;
+
+                        .construction {
+                            background-color: gray;
+                            min-width: 250px;
+                            width: calc(100% - 200px);
+                            height: 200px;
+                            border-radius: 1rem;
+                            overflow: hidden;
+                        // ! Delete this part when adding a preview for the project and change the class name
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            span {
+                                font-size: 0.9rem;
+                            }
+                        //  !
+                        }
+
+                        .p2-description {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            margin: 2rem 0;
+                            gap: 2rem;
+
+                            .p2-text {
+                                text-align: center;
+                                min-width: 250px;
+                                width: calc(100% - 100px);
+
+                                h3 {
+                                    font-size: 1.3rem;
+                                    margin-bottom: 1rem;
+                                }
+
+                                p {
+                                    font-size: 0.9rem;
+                                }
+                            }
+
+                            .p2-img {
+                                display: flex;
+                                height: 50px;
+                                gap: 5px;
+                            }
+                        }
+                    }
+
+                    .project3 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        background: linear-gradient(to bottom, $color2 0%, $color3opacity70 3%, $color3 8% 100%);
+                        padding-top: 3rem;
+
+                        .construction {
+                            background-color: gray;
+                            min-width: 250px;
+                            width: calc(100% - 200px);
+                            height: 200px;
+                            border-radius: 1rem;
+                            overflow: hidden;
+                            // ! Delete this part when adding a preview for the project and change the class name
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            span {
+                                font-size: 0.9rem;
+                            }
+                            //  !
+                        }
+
+                        .p3-description {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            margin: 2rem 0;
+                            gap: 2rem;
+
+                            .p3-text {
+                                text-align: center;
+                                min-width: 250px;
+                                width: calc(100% - 100px);
+
+                                h3 {
+                                    font-size: 1.3rem;
+                                    margin-bottom: 1rem;
+                                }
+
+                                p {
+                                    font-size: 0.9rem;
+                                }
+                            }
+
+                            .p3-img {
+                                display: flex;
+                                height: 50px;
+                                gap: 5px;
+                            }
+                        }
+                    }
+
+                    .project4 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        background: linear-gradient(to bottom, $color3 0%, $color3opacity70 3%, $color2 8% 100%);
+                        padding-top: 3rem;
+
+                        .construction {
+                            background-color: gray;
+                            min-width: 250px;
+                            width: calc(100% - 200px);
+                            height: 200px;
+                            border-radius: 1rem;
+                            overflow: hidden;
+                            // ! Delete this part when adding a preview for the project and change the class name
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            span {
+                                font-size: 0.9rem;
+                            }
+                            //  !
+                        }
+
+                        .p4-description {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            margin: 2rem 0;
+                            gap: 2rem;
+
+                            .p4-text {
+                                text-align: center;
+                                min-width: 250px;
+                                width: calc(100% - 100px);
+
+                                h3 {
+                                    font-size: 1.3rem;
+                                    margin-bottom: 1rem;
+                                }
+
+                                p {
+                                    font-size: 0.9rem;
+                                }
+                            }
+
+                            .p4-img {
+                                display: flex;
+                                height: 50px;
+                                gap: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #skills {
+            .content3 {
+                .c3-title {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 1.2rem;
+                    padding: 1.5rem 0 2rem 0;
+                    background: linear-gradient($color2 0%, $color3opacity70 40%, $color3 100%);
+                }
+
+                .skill-list {
+                    background-color: $color3;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(4, 1fr);
+                    padding-bottom: 2rem;
+
+                    .skill-item {
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                        padding-bottom: 0.8rem;
+                        padding-left: 2rem;
+                    }
+                }
+            }
+        }
+
+        #contactme {
+            .content4 {
+
+                .c4-title {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 1.2rem;
+                    padding: 1.5rem 0 2rem 0;
+                    background: linear-gradient($color3 0%, $color3opacity70 20%, $color2 40% 100%);
+                }
+
+                .info {
+                    background-color: $color2;
+
+                    .mail {
+                        display: flex;
+
+                        .small-icon {
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            background-color: $color4opacity70;
+            padding: 0 5px 12px 5px;
+            border-radius: 50%;
+            border: none;
+            animation: 5s ease-in-out 0 background-color;
+
+            svg {
+                stroke: black;
+            }
+        }
+
+        .top:hover {
+            cursor: pointer;
+            background-color: $color5opacity70;
+
+            svg {
+                stroke: rgb(255, 255, 255)
+            }
+        }
+    }
+}
+
+
+@media (650px < width < 850px) {
+    header {
+        background-color: $color2;
+
+        img {
+            display: none;
+        }
+
+        nav {
+            max-width: 550px;
+            margin: 0 auto;
+
+            ul {
+                display: flex;
+                justify-content: space-around;
+                padding: 1rem 2rem;
+
+                li {
+
+                    .nav-link {
+                        font-size: 1.1rem;
+                        font-weight: 700;
+                        color: $color5;
+                    }
+
+                    .nav-link:hover {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        #aboutme {
+
+            .content1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: $color2;
+                padding: 3rem 0;
+
+                .c1-image {
+
+                    .studying {
+                        width: 300px;
+                        opacity: 95%;
+                        border-radius: 12px;
+                    }
+                }
+
+                .c1-text {
+                    text-align: center;
+                    margin-top: 1rem;
+                    font-weight: 500;
+
+                    h1 {
+                        margin-bottom: 1rem;
+                    }
+
+                    p {
+                        width: 350px;
+                        line-height: 1.5;
+                        margin-bottom: 8px;
+                    }
+
+                    .highlight {
+                        color: rgba(0, 0, 255, 0.8);
+                    }
+                }
+            }
+        }
+
+        #projects {
+
+            .content2 {
+                background-color: lighten($color3, 20);
+                padding: 2rem 0;
+
+                .c2-title {
+                    text-align: center;
+                }
+                .works {
+
+                    .project1 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .p1-preview {
+                            width: 200px;
+                            margin-bottom: 1.5rem;
+                        }
+
+                        .p1-text {
+
+                            .p1-img {
+
+                                .icon {
+                                    width: 50px;
+                                    border-radius: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+$color1: #ffffff;
+$color2: #00d6e666;
+$color3: #24A9B3;
+$color4: #337A80;
+$color5: #2E4A4C;
+$color2opacity70: #00d7e638;
+$color3opacity70: #24a9b3b6;
+$color4opacity70: #337a80b6;
+$color5opacity70: #2e4a4caf;
+
+@keyframes turn360 {
+    from {
+        transform: rotate(0);
+        -o-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -webkit-transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+    }
+}
+
+@keyframes scaleup {
+    from {
+        transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+    }
+}
+
+@keyframes scaledown {
+    from {
+        transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+    }
+
+    to {
+        transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes fromtop {
+    from {
+        top: -500px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+@keyframes toright {
+    from {
+        left: 0;
+    }
+    
+    to {
+        left: 10px;
+    }
+}

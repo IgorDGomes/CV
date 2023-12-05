@@ -2,92 +2,205 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="styles/mainstyle.css">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header id="home">
-        <nav>
+    <header>
+        <button type="button" id="menu">
+            <img src="./images/burger-bar.png" alt="menu">
+        </button>
+        <nav class="notshow hidden-list">
             <ul>
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#aboutme" target="_self" class="nav-link">About Me</a></li>
+                <li><a href="#projects" target="_self" class="nav-link">Projects</a></li>
+                <li><a href="#skills" target="_self" class="nav-link">Skills</a></li>
+                <li><a href="#contactme" target="_self" class="nav-link">Contact Me</a></li>
             </ul>
+            <button type="button" id="closemenu">
+                <svg width="20px" height="20px">
+                    <line x1="0" y1="0" x2="20" y2="20" style="stroke:rgb(0, 0, 0);stroke-width:6" />
+                    <line x1="0" y1="20" x2="20" y2="0" style="stroke:rgb(0, 0, 0);stroke-width:6" />
+                </svg>
+            </button>
         </nav>
     </header>
-
     <main>
-        <section id="about">
-            <div style="background-color: rgb(255, 237, 237);">
-                <h1>Igor Gomes</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus sunt suscipit, sapiente, voluptatem eligendi dicta inventore hic odit exercitationem perspiciatis unde! Sequi non atque harum. Voluptate ex error tempore itaque?</p>
-                <a href="" target="_blank"><img src="" alt="facebook"></a>
-                <a href="" target="_blank"><img src="" alt="Linkedin"></a>
-                <a href="" target="_blank"><img src="" alt="Github"></a>
+        <section id="aboutme">
+            <div class="content1">
+                <div class="c1-image">
+                    <img class="studying" src="./images/A young man is typing text on a keyboard. The back.jpg" alt="Student on computer">
+                </div>
+                <div class="c1-text">
+                    <h1>Welcome!</h1>
+                    <p>My name is █₴₮▓₥฿▒, I'm a <span class="highlight">Web Developer</span>.</p>
+                    <p>I started programming because I thought it was interesting to see how websites were created from scratch.</p>
+                </div>
             </div>
         </section>
-
         <section id="projects">
-            <div style="background-color: rgb(229, 224, 255);">
-                <div>
-                    <a href="" target="_blank"><img src="" alt="project1"></a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, facere, doloremque quibusdam voluptatem dolorum nobis sapiente, placeat voluptatibus reiciendis a aliquam odio!</p>
+            <div class="content2">
+                <div class="c2-title blendltd">
+                    <h2>Newest Projects:</h2>
                 </div>
-                <div>
-                    <a href="" target="_blank"><img src="" alt="project2"></a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, facere, doloremque quibusdam voluptatem dolorum nobis sapiente, placeat voluptatibus reiciendis a aliquam odio!</p>
-                </div>
-                <div>
-                    <a href="" target="_blank"><img src="" alt="project3"></a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, facere, doloremque quibusdam voluptatem dolorum nobis sapiente, placeat voluptatibus reiciendis a aliquam odio!</p>
-                </div>
-                <div>
-                    <a href="./projects/Simon Game/index.html" target="_blank"><img src="" alt="Simon Game"></a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, facere, doloremque quibusdam voluptatem dolorum nobis sapiente, placeat voluptatibus reiciendis a aliquam odio!</p>
+                <div class="works">
+                    <div class="project1">
+                        <div class="construction">
+                            <span>This content is in construction!</span>
+                        </div>
+                        <div class="p1-description">
+                            <div class="p1-text">
+                                <h3>Google Clone</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            </div>
+                            <div class="p1-img">
+                                <p>It was made using: </p>
+                                <img src="./images/html-5.png" class="icon" alt="HTML-5">
+                                <img src="./images/css-3.png" class="icon" alt="CSS-3">
+                                <img src="./images/js.png" class="icon" alt="JS">
+                                <img src="./images/scss.png" class="icon" alt="SASS">
+                                <img src="./images/bootstrap.png" class="icon" alt="Bootstrap">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project2">
+                        <div class="construction">
+                            <span>This content is in construction!</span>
+                        </div>
+                        <div class="p2-description">
+                            <div class="p2-text">
+                                <h3>Netflix Clone</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            </div>
+                            <div class="p2-img">
+                                <p>It was made using: </p>
+                                <img src="./images/html-5.png" class="icon" alt="HTML-5">
+                                <img src="./images/css-3.png" class="icon" alt="CSS-3">
+                                <img src="./images/js.png" class="icon" alt="JS">
+                                <img src="./images/scss.png" class="icon" alt="SASS">
+                                <img src="./images/bootstrap.png" class="icon" alt="Bootstrap">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project3">
+                        <div class="construction">
+                            <span>This content is in construction!</span>
+                        </div>
+                        <div class="p3-description">
+                            <div class="p3-text">
+                                <h3>Functionality Website</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            </div>
+                            <div class="p3-img">
+                                <p>It was made using: </p>
+                                <img src="./images/html-5.png" class="icon" alt="HTML-5">
+                                <img src="./images/css-3.png" class="icon" alt="CSS-3">
+                                <img src="./images/js.png" class="icon" alt="JS">
+                                <img src="./images/scss.png" class="icon" alt="SASS">
+                                <img src="./images/bootstrap.png" class="icon" alt="Bootstrap">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project4">
+                        <div class="construction">
+                            <span>This content is in construction!</span>
+                        </div>
+                        <div class="p4-description">
+                            <div class="p4-text">
+                                <h3>Chat Website</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            </div>
+                            <div class="p4-img">
+                                <p>It was made using: </p>
+                                <img src="./images/html-5.png" class="icon" alt="HTML-5">
+                                <img src="./images/css-3.png" class="icon" alt="CSS-3">
+                                <img src="./images/js.png" class="icon" alt="JS">
+                                <img src="./images/scss.png" class="icon" alt="SASS">
+                                <img src="./images/bootstrap.png" class="icon" alt="Bootstrap">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
         <section id="skills">
-            <div style="background-color: rgb(219, 238, 255);">
-                <h2>Skills</h2>
-                <div>
-                    <ul>
-                        <h3>Languages</h3>
-                        <li>HTML / CSS</li>
-                        <li>Javascript</li>
-                        <li>Typescript</li>
-                        <h3>Frameworks</h3>
-                        <li>Bootstrap</li>
-                        <li>React</li>
-                        <li>Angular</li>
-                        <li>Vue</li>
-                        <h3>Tools</h3>
-                        <li>Git & Github</li>
-                        <li>VS Code</li>
-                        <li>Chrome Devtools</li>
-                        <li>Figma</li>
-                    </ul>
+            <div class="content3">
+                <div class="c3-title blendltd">
+                    <h2>Skills</h2>
+                </div>
+                <ul class="skill-list">
+                    <li class="skill-item">HTML</li>
+                    <li class="skill-item">CSS</li>
+                    <li class="skill-item">Javascript</li>
+                    <li class="skill-item">SCSS</li>
+                    <li class="skill-item">Bootstrap</li>
+                    <li class="skill-item">JQuery</li>
+                    <li class="skill-item">React</li>
+                    <li class="skill-item">Git</li>
+                </ul>
+            </div>
+        </section>
+        <section id="contactme">
+            <div class="content4">
+                <div class="c4-title">
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="info">
+                    <div class="mail">
+                        <img src="./images/mail.png" alt="envelope" class="small-icon">
+                        <h3>igordgomes@gmail.com</h3>
+                    </div>
                 </div>
             </div>
         </section>
+        <aside>
+            <button type="button" id="top" class="top">
+                <svg width="30px" height="30px">
+                    <line x1="0" y1="30" x2="16" y2="12" style="stroke-width:5"></line>
+                    <line x1="30" y1="30" x2="14" y2="12" style="stroke-width:5"></line>
+                </svg>
+            </button>
+        </aside>
+        
     </main>
-
-    <footer id="contact">
-        <ul style="background-color: rgb(205, 255, 255);">
-            <li><a href="" target=""><img src="" alt=""></a></li>
-            <li><a href="" target=""><img src="" alt=""></a></li>
-            <li><a href="" target=""><img src="" alt=""></a></li>
-            <li><a href="" target=""><img src="" alt=""></a></li>
+    
+    <hr>
+    <footer id="contactme">
+        @2023 Igor Gomes
+        <ul>
+            <li><a href="./about.html" target="_blank">About Me</a></li>
+            <li><a href="./projects/main.html" target="_blank">Projects</a></li>
+            <li><a href="./contact.html" target="_blank">Contact Me</a></li>
+            <li><a href="">Credits</a></li>
         </ul>
     </footer>
 
-    <!-- JS Files -->
-    <script src="./script/main.js"></script>
+    <!--
+        
+        Credits Page:
+        <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by Pixel perfect - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a>
+
+        <a href="https://www.flaticon.com/free-icons/html-5" title="html 5 icons">Html 5 icons created by Freepik - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/css-3" title="css 3 icons">Css 3 icons created by Freepik - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Freepik - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/bootstrap" title="bootstrap icons">Bootstrap icons created by Freepik - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/sass" title="sass icons">Sass icons created by Freepik - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by Febrian Hidayat - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a>
+
+    -->
+
+    
+    <!-- <a href=""><img src="./images/github.png" alt="Github"></a>
+    <a href=""><img src="./images/linkedin.png" alt="Linkedin"></a>
+    <a href=""><img src="./images/facebook.png" alt="Facebook"></a> -->
+    <script src="/index.js"></script>
 </body>
 </html>
