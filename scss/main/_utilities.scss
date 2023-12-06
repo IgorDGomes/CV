@@ -13,6 +13,19 @@
     width: 30px;
 }
 
+.frame {
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    pointer-events: none;
+    box-shadow: 0 0 15px 2px black;
+}
+
+.project-frame {
+    height: 200px;
+    border-radius: 8px;
+}
+
 @media (width <= 650px) {
     header {
         background-color: $color2;
@@ -158,24 +171,6 @@
                         align-items: center;
                         background-color: $color3;
                         padding-top: 3rem;
-
-                        .construction {
-                            background-color: gray;
-                            min-width: 250px;
-                            width: calc(100% - 200px);
-                            height: 200px;
-                            border-radius: 1rem;
-                            overflow: hidden;
-                            // ! Delete this part when adding a preview for the project and change the class name
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-
-                            span {
-                                font-size: 0.9rem;
-                            }
-                            //  !
-                        }
 
                         .p1-description {
                             display: flex;

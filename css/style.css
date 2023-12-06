@@ -76,6 +76,19 @@
   width: 30px;
 }
 
+.frame {
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+  pointer-events: none;
+  box-shadow: 0 0 15px 2px black;
+}
+
+.project-frame {
+  height: 200px;
+  border-radius: 8px;
+}
+
 @media (width <= 650px) {
   header {
     background-color: rgba(0, 214, 230, 0.4);
@@ -190,20 +203,6 @@
     align-items: center;
     background-color: #24A9B3;
     padding-top: 3rem;
-  }
-  main #projects .content2 .works .project1 .construction {
-    background-color: gray;
-    min-width: 250px;
-    width: calc(100% - 200px);
-    height: 200px;
-    border-radius: 1rem;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  main #projects .content2 .works .project1 .construction span {
-    font-size: 0.9rem;
   }
   main #projects .content2 .works .project1 .p1-description {
     display: flex;
