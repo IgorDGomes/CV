@@ -89,6 +89,12 @@
   border-radius: 8px;
 }
 
+.p-tec {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 @media (width <= 650px) {
   header {
     background-color: rgba(0, 214, 230, 0.4);
@@ -223,11 +229,6 @@
   main #projects .content2 .works .project1 .p1-description .p1-text p {
     font-size: 0.9rem;
   }
-  main #projects .content2 .works .project1 .p1-description .p1-img {
-    display: flex;
-    height: 50px;
-    gap: 5px;
-  }
   main #projects .content2 .works .project2 {
     display: flex;
     flex-direction: column;
@@ -267,11 +268,6 @@
   }
   main #projects .content2 .works .project2 .p2-description .p2-text p {
     font-size: 0.9rem;
-  }
-  main #projects .content2 .works .project2 .p2-description .p2-img {
-    display: flex;
-    height: 50px;
-    gap: 5px;
   }
   main #projects .content2 .works .project3 {
     display: flex;
@@ -313,11 +309,6 @@
   main #projects .content2 .works .project3 .p3-description .p3-text p {
     font-size: 0.9rem;
   }
-  main #projects .content2 .works .project3 .p3-description .p3-img {
-    display: flex;
-    height: 50px;
-    gap: 5px;
-  }
   main #projects .content2 .works .project4 {
     display: flex;
     flex-direction: column;
@@ -358,11 +349,6 @@
   main #projects .content2 .works .project4 .p4-description .p4-text p {
     font-size: 0.9rem;
   }
-  main #projects .content2 .works .project4 .p4-description .p4-img {
-    display: flex;
-    height: 50px;
-    gap: 5px;
-  }
   main #skills .content3 .c3-title {
     display: flex;
     justify-content: center;
@@ -391,7 +377,10 @@
     background: linear-gradient(#24A9B3 0%, rgba(36, 169, 179, 0.7137254902) 20%, rgba(0, 214, 230, 0.4) 40% 100%);
   }
   main #contactme .content4 .info {
+    display: flex;
+    justify-content: center;
     background-color: rgba(0, 214, 230, 0.4);
+    padding-bottom: 2rem;
   }
   main #contactme .content4 .info .mail {
     display: flex;
@@ -423,6 +412,28 @@
   }
   main .top:hover svg {
     stroke: rgb(255, 255, 255);
+  }
+  footer {
+    text-align: center;
+    background-color: rgba(0, 214, 230, 0.4);
+    font-size: 0.8rem;
+  }
+  footer span {
+    color: #2E4A4C;
+  }
+  footer ul {
+    display: flex;
+    justify-content: center;
+  }
+  footer ul li {
+    margin: 0 5px;
+  }
+  footer ul li a:hover {
+    color: #337A80;
+  }
+  footer ul li ul {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (650px < width < 850px) {

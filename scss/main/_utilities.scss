@@ -26,6 +26,12 @@
     border-radius: 8px;
 }
 
+.p-tec {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 @media (width <= 650px) {
     header {
         background-color: $color2;
@@ -193,12 +199,6 @@
                                     font-size: 0.9rem;
                                 }
                             }
-
-                            .p1-img {
-                                display: flex;
-                                height: 50px;
-                                gap: 5px;
-                            }
                         }
                     }
 
@@ -247,12 +247,6 @@
                                 p {
                                     font-size: 0.9rem;
                                 }
-                            }
-
-                            .p2-img {
-                                display: flex;
-                                height: 50px;
-                                gap: 5px;
                             }
                         }
                     }
@@ -303,12 +297,6 @@
                                     font-size: 0.9rem;
                                 }
                             }
-
-                            .p3-img {
-                                display: flex;
-                                height: 50px;
-                                gap: 5px;
-                            }
                         }
                     }
 
@@ -358,12 +346,6 @@
                                     font-size: 0.9rem;
                                 }
                             }
-
-                            .p4-img {
-                                display: flex;
-                                height: 50px;
-                                gap: 5px;
-                            }
                         }
                     }
                 }
@@ -409,7 +391,10 @@
                 }
 
                 .info {
+                    display: flex;
+                    justify-content: center;
                     background-color: $color2;
+                    padding-bottom: 2rem;
 
                     .mail {
                         display: flex;
@@ -448,6 +433,34 @@
 
             svg {
                 stroke: rgb(255, 255, 255)
+            }
+        }
+    }
+    
+    footer {
+        text-align: center;
+        background-color: $color2;
+        font-size: 0.8rem;
+
+        span {
+            color: $color5;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+
+            li {
+                margin: 0 5px;
+
+                a:hover {
+                    color: $color4;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                }
             }
         }
     }
