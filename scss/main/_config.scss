@@ -81,3 +81,84 @@ $color5opacity70: #2e4a4caf;
         left: 10px;
     }
 }
+
+// Project description div
+
+@mixin project-description-s {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    gap: 2rem;
+}
+
+// ! Change following styles
+
+@mixin project-description-m {
+    display: flex;
+}
+
+@mixin project-description-l {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+// ! ---------------------
+
+// Project's text description
+
+@mixin project-text-s {
+    text-align: center;
+    min-width: 250px;
+    width: calc(100% - 100px);
+}
+
+// ! Change following styles
+
+@mixin project-text-m {
+    text-align: center;
+}
+
+@mixin project-text-l {
+    text-align: center;
+    min-width: 700px;
+    width: 50svw;
+}
+
+// ! ---------------------
+
+// Project construction component
+
+@mixin project-construction-s {
+    background-color: gray;
+    min-width: 280px;
+    width: calc(100% - 200px);
+    max-width: 350px;
+    height: 200px;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// ! Change following styles
+
+@mixin project-construction-m {
+    background-color: gray;
+}
+
+@mixin project-construction-l {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    width: 30svw;
+    height: 250px;
+    border-radius: 1rem;
+}
+
+// ! ---------------------
