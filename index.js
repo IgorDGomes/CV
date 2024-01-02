@@ -4,6 +4,7 @@ function responsivePage() {
     const closeMenu = document.getElementById('closemenu');
     const navLink = document.querySelectorAll('.nav-link');
     const toTop = document.getElementById('top');
+    const setYear = document.getElementById('copyright');
 
 
     function toggleMenu() {
@@ -17,6 +18,8 @@ function responsivePage() {
     toTop.addEventListener('click', () => {
         window.scrollTo({top: 0, behavior: 'smooth'});
     });
+
+    setYear.innerHTML = `Copyright ©${new Date().getFullYear()}`;
 
     function initialState() {
         if (window.innerWidth >= 650) {
