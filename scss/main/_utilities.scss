@@ -149,6 +149,32 @@
                         margin-top: 0.5rem;
                     }
                 }
+
+                .socials {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.5rem;
+                    padding-top: 1.2rem;
+
+                    .icon {
+                        width: 2rem;
+                        height: 2rem;
+                    }
+
+                    .cv {
+                        margin-left: 1rem;
+                        padding: 5px 10px;
+                        border-radius: 12px;
+                        box-shadow: 2px 2px 5px 1px $color5;
+                        background-color: $color4opacity70;
+                    }
+
+                    .cv:hover {
+                        background-color: $color4;
+                        box-shadow: none;
+                    }
+                }
             }
         }
 

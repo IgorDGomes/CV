@@ -268,6 +268,28 @@
     line-height: 1.5;
     margin-top: 0.5rem;
   }
+  main #aboutme .content1 .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 1.2rem;
+  }
+  main #aboutme .content1 .socials .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  main #aboutme .content1 .socials .cv {
+    margin-left: 1rem;
+    padding: 5px 10px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px 1px #2E4A4C;
+    background-color: rgba(51, 122, 128, 0.7137254902);
+  }
+  main #aboutme .content1 .socials .cv:hover {
+    background-color: #337A80;
+    box-shadow: none;
+  }
   main #projects .content2 .c2-title {
     display: flex;
     justify-content: center;
