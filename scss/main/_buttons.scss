@@ -7,15 +7,25 @@
     align-items: center;
     width: 50px;
     height: 50px;
-    background-color: $color4opacity70;
     padding: 0 5px 12px 5px;
     border-radius: 50%;
     border: none;
-    animation: 5s ease-in-out 0 background-color;
+    background-color: $color4opacity70;
 }
 
 @mixin button-top-m {
-    
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    padding: 0 5px 12px 5px;
+    border-radius: 50%;
+    border: none;
+    background-color: $color4opacity70;
 }
 
 @mixin button-top-l {
@@ -31,132 +41,4 @@
     border-radius: 50%;
     border: none;
     background-color: $color4opacity70;
-}
-
-
-
-
-
-
-
-
-
-
-
-@media (650px < width <= 1200px) {
-    header {
-        background-color: $color2;
-
-        button {
-            img {
-                display: none;
-            }
-        }
-
-        nav {
-            max-width: 550px;
-            margin: 0 auto;
-
-            ul {
-                display: flex;
-                justify-content: space-around;
-                padding: 1rem 2rem;
-
-                li {
-
-                    .nav-link {
-                        font-size: 1.1rem;
-                        font-weight: 700;
-                        color: $color5;
-                    }
-
-                    .nav-link:hover {
-                        color: black;
-                    }
-                }
-            }
-        }
-    }
-
-    main {
-        #aboutme {
-
-            .content1 {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                background-color: $color2;
-                padding: 3rem 0;
-
-                .c1-image {
-
-                    .studying {
-                        width: 300px;
-                        opacity: 95%;
-                        border-radius: 12px;
-                    }
-                }
-
-                .c1-text {
-                    text-align: center;
-                    margin-top: 1rem;
-                    font-weight: 500;
-
-                    h1 {
-                        margin-bottom: 1rem;
-                    }
-
-                    p {
-                        width: 350px;
-                        line-height: 1.5;
-                        margin-bottom: 8px;
-                    }
-
-                    .highlight {
-                        color: rgba(0, 0, 255, 0.8);
-                    }
-                }
-            }
-        }
-
-        #projects {
-
-            .content2 {
-                background-color: lighten($color3, 20);
-                padding: 2rem 0;
-
-                .c2-title {
-                    text-align: center;
-                    padding-bottom: 2rem;
-                    background: linear-gradient(to bottom, $color2 0%, $color3opacity70 40%, $color3 100%);
-                }
-
-                .works {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-
-                    .project1 {
-                        background-color: $color3;
-
-                        .p1-preview {
-                            width: 200px;
-                            margin-bottom: 1.5rem;
-                        }
-
-                        .p1-text {
-
-                            .p1-img {
-
-                                .icon {
-                                    width: 50px;
-                                    border-radius: 10px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 }

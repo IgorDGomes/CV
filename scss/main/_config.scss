@@ -92,10 +92,12 @@ $color5opacity70: #2e4a4caf;
     gap: 2rem;
 }
 
-// ! Change following styles
-
 @mixin project-description-m {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
 }
 
 @mixin project-description-l {
@@ -106,8 +108,6 @@ $color5opacity70: #2e4a4caf;
     margin: 3rem 0;
 }
 
-// ! ---------------------
-
 // Project's text description
 
 @mixin project-text-s {
@@ -116,10 +116,10 @@ $color5opacity70: #2e4a4caf;
     width: calc(100% - 100px);
 }
 
-// ! Change following styles
-
 @mixin project-text-m {
     text-align: center;
+    min-width: 450px;
+    width: 70svw;
 }
 
 @mixin project-text-l {
@@ -127,8 +127,6 @@ $color5opacity70: #2e4a4caf;
     min-width: 700px;
     width: 50svw;
 }
-
-// ! ---------------------
 
 // Project construction component
 
@@ -144,10 +142,17 @@ $color5opacity70: #2e4a4caf;
     justify-content: center;
 }
 
-// ! Change following styles
-
 @mixin project-construction-m {
     background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 250px);
+    max-width: 500px;
+    min-height: 266px;
+    height: calc(100svw - 400px);
+    max-height: 347px;
+    border-radius: 1rem;
 }
 
 @mixin project-construction-l {
@@ -155,10 +160,11 @@ $color5opacity70: #2e4a4caf;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 400px;
-    width: 30svw;
-    height: 250px;
+    min-width: 480px;
+    width: 40svw;
+    max-width: 650px;
+    min-height: 333px;
+    height: calc(100svw - 1000px);
+    max-height: 450px;
     border-radius: 1rem;
 }
-
-// ! ---------------------
