@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: Poppins, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  background-color: rgb(163, 163, 163);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.border-b-slide {
+  position: relative;
+  border: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.border-b-slide:hover::after {
+  right: 0;
+}
+
+.border-b-slide::after {
+  border-bottom: 3px solid rgb(255, 255, 255);
+  content: "";
+  position: absolute;
+  right: 100%;
+  left: 0;
+  bottom: 0;
+  transition: right .5s ease-in-out;
+}
+
+.menu-shadow {
+  box-shadow: 1px 1px 2px 1px black;
+  transition: all 0.3s ease-in-out;
+}
+
+.perspective {
+  transition: transform 1s;
+}
+
+.perspective:hover {
+  transform: translateY(-5px) scale(1.1);
+}
