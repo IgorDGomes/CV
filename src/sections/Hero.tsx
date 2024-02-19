@@ -45,7 +45,7 @@ export function Hero() {
                 <h2 className="tracking-wide"><TypewriterEffect words={words} /></h2>
                 <p className="py-5 leading-5 text-sm sm:text-base">I started programming because I thought it was interesting to know how websites were created from scratch, and since then I keep trying to improve my skills.</p>
                 <div className="grid place-items-center sm:grid-cols-2 gap-10">
-                    <a href="../assets/Resume.docx" download="cv.docx" className=" flex justify-center py-3 mt-5 sm:mt-0 min-w-[140px] rounded-full bg-neutral-400/70 hover:bg-neutral-400 drop-shadow-lg hover:drop-shadow-none font-medium">Download CV</a>
+                    <a href="../assets/Resume.docx" download="cv.docx" className="flex justify-center py-3 mt-5 sm:mt-0 min-w-[140px] rounded-full bg-neutral-400/70 hover:bg-neutral-400 drop-shadow-lg hover:drop-shadow-none font-medium">Download CV</a>
                     <div className="flex gap-5">
                         <a href="https://github.com/IgorDGomes">
                             <GitHubLogoIcon className="w-[30px] sm:w-[40px] h-fit perspective" />
