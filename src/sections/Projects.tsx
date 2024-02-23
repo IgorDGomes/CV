@@ -1,16 +1,16 @@
 import {projects} from "../utils/data/projects"
 
-import html from "../assets/html.svg"
-import css from "../assets/css.svg"
-import js from "../assets/js.svg"
-import sass from "../assets/sass.svg"
-import vite from "../assets/vite.svg"
-import react from "../assets/react.svg"
-import tailwind from "../assets/tailwindcss.svg"
-import ts from "../assets/typescript.svg"
-import postgresql from "../assets/postgresql.svg"
-import node from "../assets/nodejs.svg"
-import express from "../assets/express.svg"
+import html from "../assets/images/html.svg"
+import css from "../assets/images/css.svg"
+import js from "../assets/images/js.svg"
+import sass from "../assets/images/sass.svg"
+import vite from "../assets/images/vite.svg"
+import react from "../assets/images/react.svg"
+import tailwind from "../assets/images/tailwindcss.svg"
+import ts from "../assets/images/typescript.svg"
+import postgresql from "../assets/images/postgresql.svg"
+import node from "../assets/images/nodejs.svg"
+import express from "../assets/images/express.svg"
 
 interface TechImages {
     [key: string]: string

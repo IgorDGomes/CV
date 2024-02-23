@@ -24,17 +24,17 @@ export function Header() {
         <>
             {
                 smallDevice ? (
-                    <div className="flex justify-between items-center bg-neutral-400 w-full min-h-[70px]">
+                    <div className="flex justify-between items-center bg-zinc-500 w-full min-h-[70px]">
                         <div className="ml-[5svw]">
                             <h1 className="font-bold text-xl">My Portfolio</h1>
                         </div>
-                        <div className="bg-neutral-400 rounded-full mr-[5svw]">
+                        <div className="bg-zinc-500 rounded-full mr-[5svw]">
                             <DropdownMenu.Root>
                                 <DropdownMenu.Trigger asChild>
                                     <HamburgerMenuIcon className="border rounded-full p-1 w-[40px] h-fit menu-shadow hover:shadow-none hover:border-neutral-200" />
                                 </DropdownMenu.Trigger>
                                 <DropdownMenu.Portal>
-                                    <DropdownMenu.Content className="flex flex-col gap-[6px] bg-neutral-200 p-3 rounded-md w-[150px] mr-5">
+                                    <DropdownMenu.Content className="flex flex-col gap-[6px] bg-white p-3 rounded-md w-[150px] mr-5">
                                         <DropdownMenu.Item>
                                             <a href="#about" 
                                             target="_self"
@@ -77,7 +77,7 @@ export function Header() {
                         </div>
                     </div>
                 ) : (
-                    <div className="w-full bg-neutral-400 min-h-[90px] h-[10svh] max-h-[110px]">
+                    <div className="w-full bg-zinc-500 min-h-[90px] h-[10svh] max-h-[110px]">
                         <ul className="flex justify-center items-center gap-[7svw] md:gap-[5svw] w-full h-full text-white font-semibold text-[1.3rem] tracking-wide">
                             <li className="hover:text-black border-b-slide"><a href="#about" target="_self">About Me</a></li>
                             <li className="hover:text-black border-b-slide"><a href="#projects" target="_self">Projects</a></li>

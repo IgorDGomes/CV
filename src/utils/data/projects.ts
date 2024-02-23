@@ -1,7 +1,7 @@
-import PrimeVideo from "../../assets/PrimeVideo.jpg"
-import NLWNotes from "../../assets/NLWNotes.jpg"
-import KeeperApp from "../../assets/KeeperApp.jpg"
-import OasisLegacyBank from "../../assets/OasisLegacyBank.jpg"
+import PrimeVideo from "../../assets/images/PrimeVideo.jpg"
+import NLWNotes from "../../assets/images/NLWNotes.jpg"
+import KeeperApp from "../../assets/images/KeeperApp.jpg"
+import OasisLegacyBank from "../../assets/images/OasisLegacyBank.jpg"
 
 interface Project {
     title: string;
