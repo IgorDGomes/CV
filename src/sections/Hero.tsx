@@ -40,9 +40,9 @@ export function Hero() {
       ];
 
     return (
-        <div id="about" className="bg-slate-300 pt-[10svh] pb-10 sm:pt-[92px] min-h-[500px] h-fit w-full min-w-[300px] flex flex-col sm:flex-row items-center justify-center overflow-hidden">
+        <div id="about" className="bg-slate-300 pt-[10svh] pb-10 sm:pt-[92px] min-h-[500px] h-fit w-full min-w-[300px] flex flex-col md:flex-row items-center justify-center overflow-hidden">
             <img src={img1} alt="Young man studying on computer" className="w-[30svw] min-w-[250px] sm:min-w-[300px] md:min-w-[400px] max-w-[600px] h-fit rounded-xl my-10" />
-            <div className="flex flex-col w-full sm:gap-2 md:gap-4 sm:w-[50svw] max-w-[600px] px-10 py-8 sm:py-20">
+            <div className="flex flex-col w-full sm:gap-2 md:gap-4 md:w-[50svw] max-w-[600px] px-10 py-8 sm:py-20">
                 <h2 className="tracking-wide"><TypewriterEffect words={words} /></h2>
                 <p className="py-5 leading-5 text-sm sm:text-lg">I started programming because I thought it was interesting to know how websites were created from scratch, and since then I keep trying to improve my skills.</p>
                 <div className="grid place-items-center sm:grid-cols-2 gap-10">
