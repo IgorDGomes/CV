@@ -2,11 +2,10 @@ import { GitHubLogoIcon, LinkedInLogoIcon, PersonIcon } from "@radix-ui/react-ic
 
 export function Footer() {
 
-    const d = new Date();
-    const year = d.getFullYear();
+    const year = new Date().getFullYear();
 
     return (
-        <div className="flex justify-center max-w-[500px] mx-auto py-5">
+        <div className="flex justify-center max-w-[500px] mx-auto py-5 mb-12">
             <ul className="flex flex-col sm:flex-row items-center sm:gap-10">
                 <li className="flex gap-2 items-center h-7">
                     <PersonIcon className="size-5" />

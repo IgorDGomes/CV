@@ -16,13 +16,15 @@ export function Hero() {
     setTimeout(() => {
       setDownloaded(true);
       setLoading(false);
-    }, 2000);
+    }, 500);
   };
 
   const renderButtonOrLoading = () => {
     if (loading) {
       return (
         <a 
+          href="../assets/Resume.docx" 
+          download="igorresume.docx" 
           className="flex justify-center gap-2 py-3 mt-5 sm:mt-0 min-w-[170px] rounded-full bg-zinc-500/70 hover:bg-zinc-500 drop-shadow-lg hover:drop-shadow-none font-medium download"
         >
         <Loader2 className="size-5 text-white animate-spin" />Download CV
@@ -31,7 +33,7 @@ export function Hero() {
       return (
         <a 
           href="../assets/Resume.docx" 
-          download="cv.docx" 
+          download="igorresume.docx" 
           className="flex justify-center gap-2 py-3 mt-5 sm:mt-0 min-w-[170px] rounded-full bg-zinc-500/70 hover:bg-zinc-500 drop-shadow-lg hover:drop-shadow-none font-medium download cursor-pointer"
           onClick={handleButtonClick}
         >
@@ -40,8 +42,8 @@ export function Hero() {
     } else {
       return (
         <a 
-        href="../assets/Resume.docx" 
-        download="cv.docx" 
+          href="../assets/Resume.docx" 
+          download="igorresume.docx" 
           className="flex justify-center gap-2 py-3 mt-5 sm:mt-0 min-w-[170px] rounded-full bg-zinc-500/70 hover:bg-zinc-500 drop-shadow-lg hover:drop-shadow-none font-medium download"
           onClick={handleButtonClick}
         >

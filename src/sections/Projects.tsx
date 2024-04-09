@@ -11,28 +11,33 @@ import ts from "../assets/images/typescript.svg"
 import postgresql from "../assets/images/postgresql.svg"
 import node from "../assets/images/nodejs.svg"
 import express from "../assets/images/express.svg"
+import nextjs from "../assets/images/nextjs.svg"
+import fastify from "../assets/images/fastify.svg"
+import sqlite from "../assets/images/sqlite.svg"
 
 interface TechImages {
     [key: string]: string
 }
 
 const techImages: TechImages = {
-    html: html,
-    css: css,
-    js: js,
-    ts: ts,
-    sass: sass,
-    vite: vite,
-    react: react,
-    tailwind: tailwind,
-    postgresql: postgresql,
-    node: node,
-    express: express,
+    html,
+    css,
+    js,
+    ts,
+    sass,
+    vite,
+    react,
+    tailwind,
+    postgresql,
+    node,
+    express,
+    nextjs,
+    fastify,
+    sqlite
 }
 
 
 export function Projects() {
-
     return (
         <div id="projects" className="flex flex-col justify-center items-center min-w-[300px] py-10">
             <h2 className="text-2xl sm:text-3xl font-bold">Latest Projects</h2>
@@ -46,7 +51,7 @@ export function Projects() {
                                 <img src={project.image} alt={project.title} className="w-[100%] h-[100%]" />
                                 <div className="bg-neutral-600 w-full pt-2 pb-4 px-5">
                                     <h3 className="max-w-[80%] mx-auto text-center text-lg font-semibold mb-2">Technologies:</h3>
-                                    <ul className="flex lg:flex-wrap justify-center items-center gap-3 min-h-[30px] lg:py-[9%]">
+                                    <ul className="flex flex-wrap justify-center items-center gap-3 min-h-[100px] lg:py-[9%]">
                                         {project.tech.map((tech, index) => (
                                             <li key={index}>
                                                 <img src={techImages[tech]} alt={tech} className="size-9" />
@@ -58,13 +63,13 @@ export function Projects() {
                         ) :
                         (
                             <div key={index} className="relative flex flex-col items-center rounded-md overflow-hidden">
-                                <h2 className="absolute top-0 bg-neutral-500 px-5 py-2 rounded-b-2xl z-0 text-white title">{project.title}</h2>
+                                <h2 className="absolute top-0 bg-neutral-500 px-5 py-2 rounded-b-2xl text-white title z-10">{project.title}</h2>
                                 <a href={project.link} target="_blank">
-                                    <img src={project.image} alt={project.title} className="w-[100svw]" />
+                                    <img src={project.image} alt={project.title} className="w-[100svw] hover:opacity-80" />
                                 </a>
-                                <div className="bg-neutral-600 w-full pt-2 pb-4 px-5">
+                                <div className="bg-neutral-600 w-full pt-2 pb-4 px-5 h-full">
                                     <h3 className="max-w-[80%] mx-auto text-center text-lg font-semibold mb-2">Technologies:</h3>
-                                    <ul className="flex justify-center items-center gap-3 min-h-[30px] lg:py-[18%]">
+                                    <ul className="flex flex-wrap items-center justify-center gap-3 min-h-[100px] lg:py-[18%]">
                                         {project.tech.map((tech, index) => (
                                             <li key={index}>
                                                 <img src={techImages[tech]} alt={tech} className="size-9" />
