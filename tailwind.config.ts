@@ -11,6 +11,12 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        hover: "#1E4E8C",
+        cardBg: "#AEC7E8",
+        divider: "#AEB3B7",
+        border: "#F0F5FF",
+        cta: "#388DCB",
+        secondaryBtn: "#7EC8E3",
       },
     },
   },

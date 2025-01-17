@@ -1,0 +1,7 @@
+{
+  "link1": "Home",
+  "link2": "Projects",
+  "link3": "About",
+  "link4": "Contact",
+  "socials": ["linkedin", "github", "email"]
+}

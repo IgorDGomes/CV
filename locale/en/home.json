@@ -1,0 +1,50 @@
+{
+  "hero": {
+    "title": "",
+    "description": ""
+  },
+  "skills": {
+    "title": "",
+    "languages": {
+      "html": "HTML",
+      "css": "CSS",
+      "js": "Javascript",
+      "ts": "Typescript"
+    },
+    "tools": {
+      "react": "React",
+      "next": "Next.js",
+      "tailwind": "TailwindCSS",
+      "playwright": "Playwright",
+      "node": "Node.js",
+      "express": "Express.js",
+      "postgres": "Postgresql",
+      "postman": "Postman",
+      "git": "Git"
+    }
+  },
+  "projects": {
+    "": {
+      "title": "",
+      "description": "",
+      "repository": "",
+      "website": "",
+      "technologies": []
+    },
+    "": {
+      "title": "",
+      "description": "",
+      "repository": "",
+      "website": "",
+      "technologies": []
+    },
+    "": {
+      "title": "",
+      "description": "",
+      "repository": "",
+      "website": "",
+      "technologies": []
+    },
+    "more": "more"
+  }
+}
