@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
+
 import "../globals.css";
-import { Header } from "./_components/header";
-import { Footer } from "./_components/footer";
+
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { ThemeProvider } from "@/components/themeProvider";
 
 export const metadata: Metadata = {
   title: "Igor Gomes Portfolio",
@@ -18,11 +21,13 @@ export default async function RootLayout({
   const { lang } = await params;
 
   return (
-    <html lang={lang}>
-      <body className="antialiased">
-        <Header language={lang} />
-        {children}
-        <Footer />
+    <html lang={lang} suppressHydrationWarning>
+      <body className="antialiased transition-all duration-300">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Header language={lang} />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

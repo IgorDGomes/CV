@@ -3,5 +3,10 @@
   "link2": "Projects",
   "link3": "About",
   "link4": "Contact",
-  "socials": ["linkedin", "github", "email"]
+  "socials": ["linkedin", "github", "email"],
+  "error": {
+    "title": "Not Found",
+    "description": "Could not find requested resource",
+    "link": "Return Home"
+  }
 }

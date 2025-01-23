@@ -1,49 +1,26 @@
 {
   "hero": {
-    "title": "",
-    "description": ""
+    "title": "Olá, sou Igor Gomes!",
+    "description": "Moro em Portugal e sou fascinado por desenvolvimento web, design e programação em geral. Sou uma pessoa fácil de se comunicar e sou perfecionista em relação a detalhes, trago minha criatividade e dedicação ao meu trabalho. Actualmente procuro uma vaga de Desenvolvedor Front-end",
+    "button": "Sobre mim"
   },
   "skills": {
-    "title": "",
-    "languages": {
-      "html": "HTML",
-      "css": "CSS",
-      "js": "Javascript",
-      "ts": "Typescript"
-    },
-    "tools": {
-      "react": "React",
-      "next": "Next.js",
-      "tailwind": "TailwindCSS",
-      "playwright": "Playwright",
-      "node": "Node.js",
-      "express": "Express.js",
-      "postgres": "Postgresql",
-      "postman": "Postman",
-      "git": "Git"
-    }
+    "title": "Habilidades",
+    "tools": "Ferramentas"
   },
   "projects": {
-    "": {
-      "title": "",
-      "description": "",
-      "repository": "",
-      "website": "",
-      "technologies": []
+    "title": "Projectos",
+    "first": {
+      "title": "LumberBeard",
+      "description": "Landing page para uma loja fictícia de produtos para barba."
     },
-    "": {
-      "title": "",
-      "description": "",
-      "repository": "",
-      "website": "",
-      "technologies": []
+    "second": {
+      "title": "Gerador de Personagens",
+      "description": "Feito para criar facilmente um personagem para um jogo de RPG, cada característica é gerada aleatoriamente."
     },
-    "": {
-      "title": "",
-      "description": "",
-      "repository": "",
-      "website": "",
-      "technologies": []
+    "third": {
+      "title": "Discord Bots",
+      "description": "Exibição dos meus bots do Discord, com o propósito não apenas de mostrar, mas também de como configurá-los e alterá-los."
     },
     "more": "mais"
   }

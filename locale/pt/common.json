@@ -1,7 +1,12 @@
 {
-  "link1": "Home",
+  "link1": "Início",
   "link2": "Projectos",
   "link3": "Sobre",
   "link4": "Contacto",
-  "socials": ["linkedin", "github", "email"]
+  "socials": ["linkedin", "github", "email"],
+  "error": {
+    "title": "Página não encontrada",
+    "description": "Não foi possível encontrar recurso",
+    "link": "Retornar ao Início"
+  }
 }

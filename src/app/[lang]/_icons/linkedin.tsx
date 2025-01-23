@@ -3,31 +3,12 @@ import { SVGProps } from "react";
 export function LinkedinIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
-      width={28}
-      height={28}
-      viewBox="0 0 28 28"
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
+      fill="white"
+      viewBox="0 0 128 128"
       {...props}
     >
-      <path fill="url(#pattern0_457_6)" d="M0 0H28V28H0z" />
-      <defs>
-        <pattern
-          id="pattern0_457_6"
-          patternContentUnits="objectBoundingBox"
-          width={1}
-          height={1}
-        >
-          <use xlinkHref="#image0_457_6" transform="scale(.03125)" />
-        </pattern>
-        <image
-          id="image0_457_6"
-          width={32}
-          height={32}
-          xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA3UlEQVR4nO3UMUqDQRCG4e20EKxELDyIKUSP4R1SWEiOEQhYqohlGk/gEQKCKbWzSbT5KxGVR0SFdbNBEHYb94WpZj7mhR02hEZjCdjEJTpMsBNq4nN5zAxrNQU6i/RqCkyS5S/YqinQw+PX8lccVlv+Ddaxj+3w70Af46hOo944qT1sYIhbPGOOKxz8VeAiOcKHqJcywJ3lHJcW6PzObkmBmDd5TkoLDLCKFRxl+tclBaaZ/E0yc19S4CyTP09mnkoKjDL5UTpUUmCYyX/8CU3gB+0JQjvCRqMRFnkHu/kcAxZSh/YAAAAASUVORK5CYII="
-        />
-      </defs>
+      <path d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3zM39.17 107H21.06V48.73h18.11zm-9-66.21a10.5 10.5 0 1110.49-10.5 10.5 10.5 0 01-10.54 10.48zM107 107H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53V48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75z" />
     </svg>
   );
 }

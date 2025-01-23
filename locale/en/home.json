@@ -1,49 +1,26 @@
 {
   "hero": {
-    "title": "",
-    "description": ""
+    "title": "Hi, I'm Igor Gomes!",
+    "description": "I'm based in Portugal and really passionate about web development, design and programming in general. With a good communication skill and an eye for detail and minimalist design, I bring creativity and dedication to my work. Currently looking for a Front-end Developer position.",
+    "button": "About me"
   },
   "skills": {
-    "title": "",
-    "languages": {
-      "html": "HTML",
-      "css": "CSS",
-      "js": "Javascript",
-      "ts": "Typescript"
-    },
-    "tools": {
-      "react": "React",
-      "next": "Next.js",
-      "tailwind": "TailwindCSS",
-      "playwright": "Playwright",
-      "node": "Node.js",
-      "express": "Express.js",
-      "postgres": "Postgresql",
-      "postman": "Postman",
-      "git": "Git"
-    }
+    "title": "Skills",
+    "tools": "Tools"
   },
   "projects": {
-    "": {
-      "title": "",
-      "description": "",
-      "repository": "",
-      "website": "",
-      "technologies": []
+    "title": "Projects",
+    "first": {
+      "title": "LumberBeard",
+      "description": "Landing page for a fictional beard products store."
     },
-    "": {
-      "title": "",
-      "description": "",
-      "repository": "",
-      "website": "",
-      "technologies": []
+    "second": {
+      "title": "Character Generator",
+      "description": "Made to easily create a character for a RPG game, each characteristic is randomly generated."
     },
-    "": {
-      "title": "",
-      "description": "",
-      "repository": "",
-      "website": "",
-      "technologies": []
+    "third": {
+      "title": "Discord Bots",
+      "description": "Showcase of my collection of discord bots, with the purpose of not only to show the bots but also how to setup and change accordingly."
     },
     "more": "more"
   }
