@@ -17,10 +17,10 @@ import {
   express,
 } from "./_icons/icons";
 
-import { Divider } from "../../components/divider";
+import { Divider } from "../../components/ui/divider";
 import { ProjectCard } from "./_components/projectCard";
 
-import { translation } from "../translate";
+import { translation } from "../../lib/translate";
 
 const poppins = Poppins({
   weight: ["500", "600"],

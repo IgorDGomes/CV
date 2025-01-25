@@ -1,4 +1,4 @@
-import { translation } from "@/app/translate";
+import { translation } from "@/lib/translate";
 
 export default async function About({
   params,
