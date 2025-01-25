@@ -1,4 +1,4 @@
-import { translation } from "@/app/translate";
+import { translation } from "@/lib/translate";
 import { ThemeToggle } from "@/components/themeToggle";
 
 export default async function Projects({
@@ -13,6 +13,7 @@ export default async function Projects({
     <>
       <main>
         <ThemeToggle />
+        {dictionary.link1}
       </main>
     </>
   );

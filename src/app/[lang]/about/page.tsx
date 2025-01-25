@@ -1,4 +1,4 @@
-import { translation } from "@/app/translate";
+import { translation } from "@/lib/translate";
 
 export default async function About({
   params,
@@ -10,7 +10,7 @@ export default async function About({
 
   return (
     <>
-      <main></main>
+      <main>{dictionary.link1}</main>
     </>
   );
 }

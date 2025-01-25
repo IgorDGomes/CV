@@ -4,8 +4,8 @@ import { Poppins } from "next/font/google";
 import { GithubIcon } from "../app/[lang]/_icons/github";
 import { LinkedinIcon } from "../app/[lang]/_icons/linkedin";
 
-import { translation } from "../app/translate";
-import { Language } from "./languageSelection";
+import { translation } from "../lib/translate";
+import { Language } from "./ui/languageSelection";
 import { MenuIcon } from "lucide-react";
 import {
   Sheet,
@@ -14,7 +14,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Divider } from "./divider";
+import { Divider } from "./ui/divider";
 
 const poppins = Poppins({
   weight: "500",
