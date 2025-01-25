@@ -10,7 +10,7 @@ export default async function About({
 
   return (
     <>
-      <main></main>
+      <main>{dictionary.link1}</main>
     </>
   );
 }

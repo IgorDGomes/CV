@@ -7,13 +7,13 @@ export default async function Projects({
   params: Promise<{ lang: string }>;
 }) {
   const language = (await params).lang;
-  const dictionary = await translation(language, "projects");
+  const dictionary = await translation(language, "common");
 
   return (
     <>
       <main>
         <ThemeToggle />
-        {dictionary.title}
+        {dictionary.link1}
       </main>
     </>
   );
