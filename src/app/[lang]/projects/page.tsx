@@ -11,7 +11,7 @@ export default async function Projects({
 
   return (
     <>
-      <main>
+      <main role="main">
         <ThemeToggle />
         {dictionary.link1}
       </main>

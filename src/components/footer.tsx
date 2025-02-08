@@ -8,20 +8,27 @@ const roboto = Roboto({
   subsets: ["latin"],
 });
 
+// ! Alert Add aria-label to buttons without text
+
 export function Footer() {
-  const year = new Date().getFullYear();
+  const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-hover flex justify-center">
+    <footer role="contentinfo" className="bg-hover flex justify-center">
       <div className="md:w-full md:max-w-[650px] lg:max-w-[920px] grid grid-flow-row md:flex md:flex-row-reverse md:justify-between md:items-center gap-5 py-3">
         <p
-          className={`${roboto.className} order-2`}
-        >{`© ${year} Igor Gomes`}</p>
+          className={`${roboto.className} order-2 text-white`}
+        >{`© ${currentYear} Igor Gomes`}</p>
         <div className="flex gap-8 justify-center">
-          <Link href={"https://github.com/IgorDGomes"} target="_blank">
+          <Link
+            aria-label="Github Footer Link"
+            href={"https://github.com/IgorDGomes"}
+            target="_blank"
+          >
             <GithubIcon className="size-7 hover:scale-125 transition-all duration-300" />
           </Link>
           <Link
+            aria-label="Linkedin Footer Link"
             href={"https://www.linkedin.com/in/igordgomes/"}
             target="_blank"
           >
