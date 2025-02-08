@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 
 import "../globals.css";
@@ -26,6 +27,7 @@ export default async function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header language={lang} />
           {children}
+          <SpeedInsights />
           <Footer />
         </ThemeProvider>
       </body>

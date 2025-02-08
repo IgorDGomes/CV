@@ -1,22 +1,25 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
 import { MoonIcon, SunIcon } from "lucide-react";
 
 export function ThemeToggle() {
-  const selectedTheme = localStorage.getItem("theme");
-
-  const [pageTheme, setPageTheme] = useState(selectedTheme);
+  const [pageTheme, setPageTheme] = useState<string | null>();
   const { setTheme } = useTheme();
+
+  useEffect(() => {
+    const selectedTheme = window.localStorage.getItem("theme");
+    setPageTheme(selectedTheme);
+  }, []);
 
   function handleTheme() {
     if (!pageTheme) {
       setTheme("dark");
       setPageTheme("dark");
     } else {
-      switch (selectedTheme) {
+      switch (pageTheme) {
         case "dark":
           setTheme("light");
           setPageTheme("light");

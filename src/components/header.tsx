@@ -1,9 +1,6 @@
 import Link from "next/link";
 import { Poppins } from "next/font/google";
 
-import { GithubIcon } from "../app/[lang]/_icons/github";
-import { LinkedinIcon } from "../app/[lang]/_icons/linkedin";
-
 import { translation } from "../lib/translate";
 import { Language } from "./ui/languageSelection";
 import { MenuIcon } from "lucide-react";
@@ -15,17 +12,21 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Divider } from "./ui/divider";
+import { ThemeToggle } from "./themeToggle";
 
 const poppins = Poppins({
   weight: "500",
   subsets: ["latin"],
 });
 
+// ! Alert Add aria-label to buttons without text
+
 export async function Header({ language }: { language: string }) {
   const dictionary = await translation(language, "common");
 
   return (
     <header
+      role="banner"
       className={`${poppins.className} h-14 flex items-center justify-end md:justify-center border-b border-divider/10 px-[10%]`}
     >
       {/* Mobile */}
@@ -39,7 +40,7 @@ export async function Header({ language }: { language: string }) {
               <SheetTitle className="text-xl">Menu</SheetTitle>
             </SheetHeader>
             <Divider />
-            <nav className="pt-4">
+            <nav role="navigation" className="pt-4">
               <ul
                 className={`${poppins.className} flex flex-col items-center gap-2 font-semibold tracking-wide`}
               >
@@ -107,22 +108,7 @@ export async function Header({ language }: { language: string }) {
           {dictionary.link4}
         </Link>
       </nav>
-      <div className="hidden lg:flex gap-8">
-        <Link
-          href={"https://github.com/IgorDGomes"}
-          className="outline-none focus:outline-cta"
-          target="_blank"
-        >
-          <GithubIcon className="fill-black dark:fill-white size-7 hover:scale-125 transition-all duration-300" />
-        </Link>
-        <Link
-          href={"https://www.linkedin.com/in/igordgomes/"}
-          className="outline-none focus:outline-cta"
-          target="_blank"
-        >
-          <LinkedinIcon className="fill-black dark:fill-white size-7 hover:scale-125 transition-all duration-300" />
-        </Link>
-      </div>
+      <ThemeToggle />
       <Language lang={language} className="outline-none focus:outline-cta" />
     </header>
   );

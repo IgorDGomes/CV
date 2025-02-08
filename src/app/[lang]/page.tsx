@@ -21,6 +21,8 @@ import { Divider } from "../../components/ui/divider";
 import { ProjectCard } from "./_components/projectCard";
 
 import { translation } from "../../lib/translate";
+import { GithubIcon } from "./_icons/github";
+import { LinkedinIcon } from "./_icons/linkedin";
 
 const poppins = Poppins({
   weight: ["500", "600"],
@@ -32,6 +34,8 @@ const roboto = Roboto({
   subsets: ["latin"],
 });
 
+// ! Alert Increase contrast ratio from the About me button
+
 export default async function Home({
   params,
 }: {
@@ -42,7 +46,7 @@ export default async function Home({
 
   return (
     <>
-      <main className="relative flex flex-col items-center">
+      <main role="main" className="relative flex flex-col items-center">
         <section
           id="hero"
           className="py-10 lg:py-24 max-w-[300px] md:max-w-[500px] lg:max-w-[880px] lg:flex lg:items-center lg:gap-48"
@@ -58,12 +62,28 @@ export default async function Home({
             >
               {dictionary.hero.description}
             </p>
-            <Link
-              href={"/about"}
-              className={`${poppins.className} bg-cta hover:bg-hover px-10 py-2 rounded-md transition-all duration-300`}
-            >
-              {dictionary.hero.button}
-            </Link>
+            <div className="flex items-center gap-6">
+              <Link
+                href={`/${language}/about`}
+                className={`${poppins.className} bg-cta hover:bg-hover px-10 py-2 rounded-md transition-all duration-300`}
+              >
+                {dictionary.hero.button}
+              </Link>
+              <Link
+                href={"/"}
+                target="_blank"
+                className="bg-background hover:bg-cta p-1.5 rounded-lg transition-all duration-300"
+              >
+                <GithubIcon className="size-7" />
+              </Link>
+              <Link
+                href={"/"}
+                target="_blank"
+                className="bg-background hover:bg-cta p-1.5 rounded-lg transition-all duration-300"
+              >
+                <LinkedinIcon className="size-7" />
+              </Link>
+            </div>
           </div>
           <Image
             src={profilePic}

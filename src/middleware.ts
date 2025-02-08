@@ -4,17 +4,17 @@ export function middleware(request: NextRequest) {
     const url = request.nextUrl.clone();
     const pathSegment = url.pathname.split("/").filter(Boolean);
     const validLocales = ["en", "pt"];
+    const locale = pathSegment[0];
 
-    if (pathSegment.length > 0 && !validLocales.includes(pathSegment[0])) {
-        url.pathname = "/en";
+    if (pathSegment.length === 0) {
+        const acceptLanguage = request.headers.get("accept-language");
+        const preferredLocale = acceptLanguage?.includes("pt") ? "/pt" : "/en"
+        url.pathname = preferredLocale;
         return NextResponse.redirect(url);
     }
 
-    const acceptLanguage = request.headers.get("accept-language");
-    const preferredLocale = acceptLanguage?.includes("pt") ? "/pt" : "/en"
-
-    if (pathSegment.length === 0) {
-        url.pathname = preferredLocale;
+    if (!validLocales.includes(locale)) {
+        url.pathname = "/en";
         return NextResponse.redirect(url);
     }
 
