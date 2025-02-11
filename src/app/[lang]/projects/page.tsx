@@ -1,5 +1,5 @@
 import { translation } from "@/lib/translate";
-import { ThemeToggle } from "@/components/themeToggle";
+import { ThemeToggle } from "@/components/ui/themeToggle";
 
 export default async function Projects({
   params,

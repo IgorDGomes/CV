@@ -65,23 +65,23 @@ export default async function Home({
             <div className="flex items-center gap-6">
               <Link
                 href={`/${language}/about`}
-                className={`${poppins.className} bg-cta hover:bg-hover px-10 py-2 rounded-md transition-all duration-300`}
+                className={`${poppins.className} bg-cta hover:bg-hover px-10 py-2 rounded-md transition-all duration-300 text-white`}
               >
                 {dictionary.hero.button}
               </Link>
               <Link
-                href={"/"}
+                href={"https://github.com/IgorDGomes"}
                 target="_blank"
-                className="bg-background hover:bg-cta p-1.5 rounded-lg transition-all duration-300"
+                className="bg-background hover:bg-cta p-1.5 rounded-lg transition-all duration-300 group"
               >
-                <GithubIcon className="size-7" />
+                <GithubIcon className="size-7 fill-black dark:fill-white group-hover:fill-white transition-all duration-300" />
               </Link>
               <Link
-                href={"/"}
+                href={"https://www.linkedin.com/in/igordgomes/"}
                 target="_blank"
-                className="bg-background hover:bg-cta p-1.5 rounded-lg transition-all duration-300"
+                className="bg-background hover:bg-cta p-1.5 rounded-lg transition-all duration-300 group"
               >
-                <LinkedinIcon className="size-7" />
+                <LinkedinIcon className="size-7 fill-black dark:fill-white group-hover:fill-white transition-all duration-300" />
               </Link>
             </div>
           </div>
@@ -178,7 +178,7 @@ export default async function Home({
           </div>
           <Link
             href={`/${language}/projects`}
-            className={`${roboto.className} font-medium text-lg max-w-[500px] bg-hover hover:bg-cta rounded-md px-20 py-1 transition-all duration-300`}
+            className={`${roboto.className} font-medium text-lg max-w-[500px] bg-hover hover:bg-cta rounded-md px-20 py-1 transition-all duration-300 text-white`}
           >
             {dictionary.projects.more}
           </Link>

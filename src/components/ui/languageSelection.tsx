@@ -1,5 +1,7 @@
 "use client";
 
+import { usePathname, useRouter } from "next/navigation";
+import { ChangeEvent } from "react";
 import { twMerge } from "tailwind-merge";
 
 export function Language({
@@ -9,16 +11,37 @@ export function Language({
   lang: string;
   className?: string;
 }) {
-  return (
-    <button
-      className={twMerge("hidden md:inline-block ml-12 text-sm", className)}
-      onClick={() => console.log(lang)}
-    >
-      {lang.toUpperCase()}
-    </button>
-  );
-}
+  const router = useRouter();
+  const pathList = usePathname().split("/").filter(Boolean);
+  const pathAfterLanguage = pathList.slice(1).join("/");
 
-export function Root({ children }: { children: React.ReactNode }) {
-  return <div>{children}</div>;
+  function handleLanguageSelection(e: ChangeEvent<HTMLSelectElement>) {
+    const selectedLanguage = e.target.value;
+
+    return router.push(`/${selectedLanguage}/${pathAfterLanguage}`);
+  }
+
+  return (
+    <select
+      className={twMerge("md:ml-12 hover:cursor-pointer", className)}
+      onChange={handleLanguageSelection}
+      name="languageSelection"
+    >
+      {lang === "en" ? (
+        <>
+          <option value="en" defaultValue={lang}>
+            EN
+          </option>
+          <option value="pt">PT</option>
+        </>
+      ) : (
+        <>
+          <option value="pt" defaultValue={lang}>
+            PT
+          </option>
+          <option value="en">EN</option>
+        </>
+      )}
+    </select>
+  );
 }
