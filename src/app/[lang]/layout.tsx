@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 
@@ -22,15 +23,12 @@ export default async function RootLayout({
   const { lang } = await params;
 
   return (
-    <html lang={lang} suppressHydrationWarning>
-      <body className="antialiased transition-all duration-300">
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Header language={lang} />
-          {children}
-          <SpeedInsights />
-          <Footer />
-        </ThemeProvider>
-      </body>
-    </html>
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <Header language={lang} />
+      {children}
+      <Footer />
+      <Analytics />
+      <SpeedInsights />
+    </ThemeProvider>
   );
 }
