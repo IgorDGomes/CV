@@ -1,0 +1,24 @@
+{
+  "position": "Desenvolvedor Frontend",
+  "description": "PT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora velit blanditiis sit dicta repellendus ea qui fugit, maiores pariatur corrupti, quidem quaerat odio cumque repudiandae nemo aut quam voluptatem.",
+  "interests": {
+    "title": "Interesses",
+    "list": [
+      "Desenvolvimento Web",
+      "Estudo de Línguas",
+      "Design Web",
+      "Desenvolvimento de Jogos",
+      "Ciber Segurança",
+      "Jogos"
+    ]
+  },
+  "languages": {
+    "title": "Línguas",
+    "list": ["Português", "Inglês"],
+    "learningList": ["Romeno"]
+  },
+  "contact": {
+    "title": "Contacte-me",
+    "message": "Enviar Mensagem"
+  }
+}
