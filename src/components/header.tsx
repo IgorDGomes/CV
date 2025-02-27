@@ -20,8 +20,6 @@ const poppins = Poppins({
   subsets: ["latin"],
 });
 
-// ! Alert Add aria-label to buttons without text
-
 export async function Header({ language }: { language: string }) {
   const dictionary = await translation(language, "common");
 
@@ -36,17 +34,19 @@ export async function Header({ language }: { language: string }) {
           <SheetTrigger>
             <MenuIcon className="size-7" />
           </SheetTrigger>
-          <SheetContent className="w-[50%] border-white/10">
+          <SheetContent className="block md:hidden w-[50%] border-white/10">
             <SheetHeader className="py-2">
-              <SheetTitle className="text-xl">Menu</SheetTitle>
+              <SheetTitle className="text-xl duration-300 text-center">
+                Menu
+              </SheetTitle>
               <SheetDescription className="sr-only">
                 This is a menu sheet containing navigation links.
               </SheetDescription>
             </SheetHeader>
             <Divider />
-            <nav role="navigation" className="pt-4">
+            <nav role="navigation" className="pt-8">
               <ul
-                className={`${poppins.className} flex flex-col items-center gap-2 font-semibold tracking-wide`}
+                className={`${poppins.className} flex flex-col items-center gap-4 font-semibold tracking-wide`}
               >
                 <li>
                   <Link
