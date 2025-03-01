@@ -8,8 +8,6 @@ const roboto = Roboto({
   subsets: ["latin"],
 });
 
-// ! Alert Add aria-label to buttons without text
-
 export function Footer() {
   const currentYear = new Date().getFullYear();
 

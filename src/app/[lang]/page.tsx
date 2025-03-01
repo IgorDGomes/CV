@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Poppins, Roboto } from "next/font/google";
 
 import profilePic from "/public/profile.jpg";
-import lumberBeard from "/public/projects/LumberBeard_Desktop.png";
+import lumberBeard from "/public/projects/LumberBeard.png";
 import studyBots from "/public/projects/StudyBots.png";
 import randomCharacter from "/public/projects/RandomCharacter.png";
 import {
@@ -33,8 +33,6 @@ const roboto = Roboto({
   weight: ["400", "500"],
   subsets: ["latin"],
 });
-
-// ! Alert Increase contrast ratio from the About me button
 
 export default async function Home({
   params,
