@@ -37,8 +37,8 @@ export function ProjectCards({
   technologies,
 }: ProjectCardProps) {
   return (
-    <div className="grid grid-flow-row md:grid-cols-5 xl:grid-cols-6 bg-background/50 backdrop-blur-md rounded-lg overflow-hidden border border-foreground dark:border-border min-h-[400px] md:min-h-[350px] xl:min-h-[360px] md:max-h-60">
-      <div className="relative h-40 md:h-full col-span-2 xl:col-span-2">
+    <div className="grid grid-cols-1 md:grid-cols-5 xl:grid-cols-6 bg-background/50 backdrop-blur-md rounded-lg overflow-hidden border border-foreground dark:border-border min-h-[400px] md:min-h-[350px] xl:min-h-[360px] md:max-h-60">
+      <div className="relative h-40 md:h-full col-span-2">
         {previewLink ? (
           <div className="group">
             <div className="absolute inset-0 overflow-hidden">
